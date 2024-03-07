@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMAGE LINKS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header, nav, main, footer {
+            margin: 20px;
+        }
+
+        nav a {
+            margin-right: 20px;
+            text-decoration: none; 
+            color: #333;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .menu {
+            list-style: none;
+            padding: 0;
+        }
+
+        .menu li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to our Website!</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#menu">Menu</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2>Home</h2>
+            <p>Welcome to this website. Explore the different sections below.</p>
+            <p>
+                <a href="https://photos.app.goo.gl/N7xuUZxBgDNzN3cn7">
+                    <img src="technology.jpg" alt="Technology Image">
+                </a>
+            </p>
+        </section>
+
+        <section id="gallery">
+            <h2>Gallery</h2>
+            <div class="grid">
+                <a href="https://photos.app.goo.gl/x48KTAkToFVqPmy16"><img src="nature.jpg" alt="Nature Image"></a>
+            </div>
+        </section>
+
+        <section id="menu">
+            <h2>Menu</h2>
+            <ul class="menu">
+                <li><a href="https://photos.app.goo.gl/6p4UhhhhkwS4nXdG8"><img src="food.jpg" alt="Food Image"> Food Item 1</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; SHIRLEYCODES</p>
+    </footer>
+</body>
+</html>
